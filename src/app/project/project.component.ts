@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { IProject } from '../interfaces/project.interface';
 
 @Component({
   selector: 'app-project',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent {
+	@Input() project!: IProject;
+	@Output() clickEvent = new EventEmitter<string>();
 
+	clickHandler(value: string) {
+		this.clickEvent.emit(value);
+	}
 }
+   

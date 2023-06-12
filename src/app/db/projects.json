@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "E-commerce Website",
+    "requirements": [
+      "Implement user registration and authentication system",
+      "Create product listing and search functionality",
+      "Implement shopping cart and checkout process",
+      "Integrate secure payment gateway"
+    ],
+    "tags": ["e-commerce", "web development", "online shopping"],
+    "complexity": "medium"
+  },
+  {
+    "id": 2,
+    "title": "Social Media Dashboard",
+    "requirements": [
+      "Implement user authentication and profile management",
+      "Create a news feed displaying posts from friends",
+      "Allow users to post status updates and media",
+      "Implement real-time chat feature"
+    ],
+    "tags": ["social media", "dashboard", "web app"],
+    "complexity": "high"
+  },
+  {
+    "id": 3,
+    "title": "Recipe Sharing Platform",
+    "requirements": [
+      "Implement user registration and login system",
+      "Allow users to create, edit, and delete recipes",
+      "Create a search functionality for recipes",
+      "Implement a rating and review system"
+    ],
+    "tags": ["recipe sharing", "food", "web development"],
+    "complexity": "low"
+  },
+  {
+    "id": 4,
+    "title": "Event Booking Platform",
+    "requirements": [
+      "Implement user registration and authentication system",
+      "Allow event organizers to create and manage events",
+      "Provide event search and filtering functionality",
+      "Integrate a ticketing and payment system"
+    ],
+    "tags": ["event booking", "ticketing", "web app"],
+    "complexity": "medium"
+  },
+  {
+    "id": 5,
+    "title": "Job Board Website",
+    "requirements": [
+      "Implement user registration and login system",
+      "Allow employers to post job listings",
+      "Enable job seekers to search and apply for jobs",
+      "Implement a messaging system between employers and job seekers"
+    ],
+    "tags": ["job board", "employment", "web development"],
+    "complexity": "low"
+  }
+]

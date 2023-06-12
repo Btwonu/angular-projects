@@ -1,15 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import projectsData from './db/projects.json';
+
+console.log(projectsData);
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'projects-fe';
-  inputValue = 'very value';
+export class AppComponent implements OnInit, OnDestroy {
+	title = 'projects-fe';
+	projectsData = projectsData;
 
-  clickHandler() {
-	alert('hello');
-  }
+	// Component is instantiating
+	constructor() {
+		console.log('constructor');
+	}
+
+	ngOnInit(): void {
+		console.log('init');
+	}
+
+	ngOnDestroy(): void {
+		console.log('destroy');
+	}
 }
