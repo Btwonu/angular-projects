@@ -1,8 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import projectsData from './db/projects.json';
-
-console.log(projectsData);
-
+import { ArticleService } from './services/ArticleService';
+import { Project } from './models/Project';
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -10,15 +8,15 @@ console.log(projectsData);
 })
 export class AppComponent implements OnInit, OnDestroy {
 	title = 'projects-fe';
-	projectsData = projectsData;
+	projectsData: Project[] = [];
 
-	// Component is instantiating
-	constructor() {
+	constructor(private articleService: ArticleService) {
 		console.log('constructor');
 	}
 
 	ngOnInit(): void {
 		console.log('init');
+		this.projectsData = this.articleService.getArticles();
 	}
 
 	ngOnDestroy(): void {
