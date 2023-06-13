@@ -9,8 +9,7 @@ import { IProject } from '../interfaces/project.interface';
 export class ProjectListComponent {
 	@Input() projects: IProject[] = [];
 
-	clickEventHandler(value: string) {
-		console.log(`${value} is in project list`);
-		alert('here');
+	clickEventHandler(id: number) {
+		console.log(`Project ${id} is being built.`);
 	}
 }
