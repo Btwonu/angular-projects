@@ -1,3 +1,4 @@
+import { faker } from '@faker-js/faker';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Project } from '../models/Project';
 

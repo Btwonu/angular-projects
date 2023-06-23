@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { IProject } from '../interfaces/project.interface';
+import { Project } from '../models/Project';
+
 
 @Component({
   selector: 'app-project-list',
@@ -7,7 +8,7 @@ import { IProject } from '../interfaces/project.interface';
   styleUrls: ['./project-list.component.css']
 })
 export class ProjectListComponent {
-	@Input() projects: IProject[] = [];
+	@Input() projects: Project[] = [];
 
 	clickEventHandler(id: number) {
 		console.log(`Project ${id} is being built.`);
