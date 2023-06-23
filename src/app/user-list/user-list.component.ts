@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 import { User } from '../models/User';
+import { UserService } from '../services/UserService';
 
 @Component({
   selector: 'app-user-list',
@@ -8,4 +9,16 @@ import { User } from '../models/User';
 })
 export class UserListComponent {
 	@Input() users: User[] = [];
+	@Output() newUserEvent = new EventEmitter<User>();
+
+	constructor(private userService: UserService) {}
+	
+	ngOnInit(): void {
+		console.log('init UserListComponent');
+	}
+
+	generateUser() {
+		const newUser: User = this.userService.getNewUser();
+		this.newUserEvent.emit(newUser);
+	}
 }

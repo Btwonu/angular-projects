@@ -17,17 +17,20 @@ export class AppComponent implements OnInit, OnDestroy {
 	constructor(
 		private articleService: ArticleService,
 		private userService: UserService,
-	) {
-		console.log('constructor');
-	}
+	) {}
 
 	ngOnInit(): void {
-		console.log('init');
+		console.log('init AppComponent');
 		this.projectsData = this.articleService.getArticles();
 		this.usersData = this.userService.getUsers();
 	}
 
 	ngOnDestroy(): void {
-		console.log('destroy');
+		console.log('destroy AppComponent');
+	}
+
+	addUser(user: User) {
+		this.usersData.push(user);
+		console.log('Addded new user successfully');
 	}
 }
