@@ -33,4 +33,14 @@ export class AppComponent implements OnInit, OnDestroy {
 		this.usersData.push(user);
 		console.log('Addded new user successfully');
 	}
+
+	handleChange(e: Event) {
+		// console.log(event.target);
+
+		const target: HTMLInputElement | null = e.target;
+		
+		const result = target.value;
+
+		console.log(result);
+	}
 }

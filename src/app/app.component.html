@@ -2,4 +2,6 @@
 
 <app-project-list [projects]="projectsData"></app-project-list>
 
+<input (keyup)="handleChange($event)" type="text"/>
+
 <app-user-list [users]="usersData" (newUserEvent)="addUser($event)"></app-user-list>
