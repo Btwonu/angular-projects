@@ -3,7 +3,7 @@ import { Project } from '../models/Project';
 import projectsData from '../db/projects.json';
 
 @Injectable()
-export class ArticleService {
+export class ProjectService {
 	getArticles(): Project[] {
 		const projects = projectsData.map(
 			(project: Project) =>

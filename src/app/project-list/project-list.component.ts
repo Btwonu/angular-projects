@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../models/Project';
-
+import { ProjectService } from '../services/ProjectService';
 
 @Component({
   selector: 'app-project-list',
@@ -10,7 +10,11 @@ import { Project } from '../models/Project';
 export class ProjectListComponent {
 	@Input() projects: Project[] = [];
 
-	clickEventHandler(id: number) {
+	constructor(private projectService: ProjectService) {
+		this.projects = this.projectService.getArticles();
+	}
+
+	buildEventHandler(id: number) {
 		console.log(`Project ${id} is being built.`);
 	}
 }

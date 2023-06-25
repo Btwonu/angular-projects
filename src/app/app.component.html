@@ -1,7 +1,8 @@
-<h1>{{title}}</h1>
+<h1>{{ title }}</h1>
 
-<app-project-list [projects]="projectsData"></app-project-list>
+<nav>
+	<a class="button" routerLink="/projects" routerLinkActive="is-active" ariaCurrentWhenActive="page">Projects</a> |
+	<a class="button" routerLink="/users" routerLinkActive="is-active" ariaCurrentWhenActive="page">Users</a>
+</nav>
 
-<input (keyup)="handleChange($event)" type="text"/>
-
-<app-user-list [users]="usersData" (newUserEvent)="addUser($event)"></app-user-list>
+<router-outlet></router-outlet>

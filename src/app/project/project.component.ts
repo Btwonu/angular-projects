@@ -9,10 +9,10 @@ import { Project } from '../models/Project';
 })
 export class ProjectComponent {
 	@Input() project!: Project;
-	@Output() clickEvent = new EventEmitter<number>();
+	@Output() buildEvent = new EventEmitter<number>();
 
 	clickHandler(id: number) {
-		this.clickEvent.emit(id);
+		this.buildEvent.emit(id);
 	}
 }
    

@@ -1,6 +1,4 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ArticleService } from './services/ArticleService';
-import { UserService } from './services/UserService';
 import { Project } from './models/Project';
 import { User } from './models/User';
 
@@ -10,37 +8,17 @@ import { User } from './models/User';
 	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-	title = 'projects-fe';
+	title = 'Projects FE';
 	projectsData: Project[] = [];
 	usersData: User[] = [];
 
-	constructor(
-		private articleService: ArticleService,
-		private userService: UserService,
-	) {}
+	constructor() {}
 
 	ngOnInit(): void {
 		console.log('init AppComponent');
-		this.projectsData = this.articleService.getArticles();
-		this.usersData = this.userService.getUsers();
 	}
 
 	ngOnDestroy(): void {
 		console.log('destroy AppComponent');
-	}
-
-	addUser(user: User) {
-		this.usersData.push(user);
-		console.log('Addded new user successfully');
-	}
-
-	handleChange(e: Event) {
-		// console.log(event.target);
-
-		const target: HTMLInputElement | null = e.target;
-		
-		const result = target.value;
-
-		console.log(result);
 	}
 }
