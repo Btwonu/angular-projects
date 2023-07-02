@@ -1,6 +1,8 @@
-import { faker } from '@faker-js/faker';
+import { ActivatedRoute } from '@angular/router'
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Project } from '../models/Project';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-project',
@@ -9,10 +11,20 @@ import { Project } from '../models/Project';
 })
 export class ProjectComponent {
 	@Input() project!: Project;
-	@Output() buildEvent = new EventEmitter<number>();
+	@Output() buildEvent = new EventEmitter<string>();
 
-	clickHandler(id: number) {
+	public id$!: Observable<string>;
+	id: string = '';
+
+	constructor(route: ActivatedRoute) {
+		console.log(route);
+
+		route.params.subscribe(params => {
+			this.id = params.id;
+		});
+	}
+
+	clickHandler(id: string) {
 		this.buildEvent.emit(id);
 	}
 }
-   

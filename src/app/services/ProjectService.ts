@@ -4,7 +4,7 @@ import projectsData from '../db/projects.json';
 
 @Injectable()
 export class ProjectService {
-	getArticles(): Project[] {
+	getAll(): Project[] {
 		const projects = projectsData.map(
 			(project: Project) =>
 				new Project(
@@ -17,5 +17,9 @@ export class ProjectService {
 		);
 
 		return projects;
+	}
+
+	getOne(id: string): Project | undefined {
+		return projectsData.find((project: Project) => String(project.id) === id);
 	}
 }

@@ -11,10 +11,10 @@ export class ProjectListComponent {
 	@Input() projects: Project[] = [];
 
 	constructor(private projectService: ProjectService) {
-		this.projects = this.projectService.getArticles();
+		this.projects = this.projectService.getAll();
 	}
 
-	buildEventHandler(id: number) {
+	buildEventHandler(id: string) {
 		console.log(`Project ${id} is being built.`);
 	}
 }

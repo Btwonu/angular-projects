@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "E-commerce Website",
     "requirements": [
       "Implement user registration and authentication system",
@@ -12,7 +12,7 @@
     "complexity": "medium"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Social Media Dashboard",
     "requirements": [
       "Implement user authentication and profile management",
@@ -24,7 +24,7 @@
     "complexity": "high"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Recipe Sharing Platform",
     "requirements": [
       "Implement user registration and login system",
@@ -36,7 +36,7 @@
     "complexity": "low"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Event Booking Platform",
     "requirements": [
       "Implement user registration and authentication system",
@@ -48,7 +48,7 @@
     "complexity": "medium"
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Job Board Website",
     "requirements": [
       "Implement user registration and login system",

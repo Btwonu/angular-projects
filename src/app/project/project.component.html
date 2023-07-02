@@ -1,17 +1,21 @@
-<h4>{{project.title}}</h4>
+<h4>
+	<a routerLink="/projects/1">{{ project.title }}</a>
+</h4>
+
+<p>{{ id }}</p>
 
 <ul class="requirements">
 	<li *ngFor="let requirement of project.requirements">
-		{{requirement}}
+		{{ requirement }}
 	</li>
 </ul>
 
 <ul class="tags">
 	<li *ngFor="let tag of project.tags">
-		{{tag}}
+		{{ tag }}
 	</li>
 </ul>
 
-<span>{{project.complexity}}</span>
+<span>{{ project.complexity }}</span>
 
 <button (click)="clickHandler(project.id)">Build</button>
