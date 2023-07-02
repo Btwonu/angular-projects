@@ -1,0 +1,33 @@
+<p>product-details works!</p>
+
+<div class="product" *ngIf="product$ | async as product">
+	<!-- {{ product?.title }} -->
+
+	<header class="product__head">
+		<h2>{{ product.title }}</h2>
+	</header><!-- /.product__head -->
+
+	<div class="product__category">
+		<p>Category: <span>{{ product.category }}</span></p>
+	</div><!-- /.product__category -->
+
+	<div class="product__content">
+		<p>{{ product.description }}</p>
+	</div><!-- /.product__content -->
+
+	<div class="product__meta">
+		<div class="product__price">
+			<p>Price: <span>{{ product.price }}</span></p>
+		</div><!-- /.product__price -->
+
+		<div class="product__rating">
+			<p>Rating: <span>{{ product.rating }}</span></p>
+		</div><!-- /.product__rating -->
+	</div><!-- /.product__meta -->
+
+	<div class="product__images">
+		<div *ngFor="let src of product.images" class="product__image">
+			<img src="{{ src }}" alt="" srcset=""/>
+		</div><!-- /.product__image -->
+	</div><!-- /.product__images -->
+</div>

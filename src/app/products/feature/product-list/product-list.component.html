@@ -1,0 +1,11 @@
+<p>product-list works!</p>
+
+<ul>
+	<li *ngFor="let product of products$ | async">
+		<a routerLink="/products/{{ product.id }}">
+			<p>{{ product.title }}</p>
+	
+			<img src="{{ product.thumbnail }}" alt=""/>
+		</a>
+	</li>
+</ul>

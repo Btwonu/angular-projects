@@ -1,0 +1,21 @@
+ul {
+	--col-gap: 10px;
+	--row-gap: 10px;
+
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: calc(-1 * var(--row-gap)) calc(-1 * var(--col-gap));
+}
+
+li {
+	flex: 0 0 33%;
+	padding: var(--row-gap) var(--col-gap);
+}
+
+li img {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
