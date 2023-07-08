@@ -2,6 +2,7 @@
   {
     "id": "1",
     "title": "E-commerce Website",
+	"description": "An e-commerce website for online shopping",
     "requirements": [
       "Implement user registration and authentication system",
       "Create product listing and search functionality",
@@ -14,6 +15,7 @@
   {
     "id": "2",
     "title": "Social Media Dashboard",
+	"description": "A social media dashboard for managing social media activities",
     "requirements": [
       "Implement user authentication and profile management",
       "Create a news feed displaying posts from friends",
@@ -26,6 +28,7 @@
   {
     "id": "3",
     "title": "Recipe Sharing Platform",
+	"description": "A recipe sharing platform for users to create, discover, and share recipes",
     "requirements": [
       "Implement user registration and login system",
       "Allow users to create, edit, and delete recipes",
@@ -38,6 +41,7 @@
   {
     "id": "4",
     "title": "Event Booking Platform",
+	"description": "An event booking platform for organizing and managing events",
     "requirements": [
       "Implement user registration and authentication system",
       "Allow event organizers to create and manage events",
@@ -50,6 +54,7 @@
   {
     "id": "5",
     "title": "Job Board Website",
+	"description": "A job board website for posting and applying to job listings",
     "requirements": [
       "Implement user registration and login system",
       "Allow employers to post job listings",

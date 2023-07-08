@@ -1,42 +1,55 @@
-<div class="wrapper">
-	<div class="wrapper__inner">
-		<header class="header">
-			<div class="shell">
-				<nav class="nav">
-					<a class="button" routerLink="/projects" routerLinkActive="is-active" ariaCurrentWhenActive="page">Projects</a> |
-					<a class="button" routerLink="/users" routerLinkActive="is-active" ariaCurrentWhenActive="page">Users</a> |
-					<a class="button" routerLink="/products" routerLinkActive="is-active" ariaCurrentWhenActive="page">Products</a>
-				</nav>
-			</div><!-- /.shell -->
-		</header>
+<mat-sidenav-container class="example-container">
+	<mat-sidenav #sidebar mode="side">Sidenav content</mat-sidenav>
 
-		<main class="main">
-			<router-outlet></router-outlet>
-		</main><!-- /.main -->
+	<mat-sidenav-content>
+		<div class="wrapper">
+			<div class="wrapper__inner">
+				<mat-toolbar color="primary">
+					<button mat-icon-button (click)="sidebar.toggle()">
+						<mat-icon color="basic">menu</mat-icon>
+					</button>
+				</mat-toolbar>
+				  
+				<header class="header">
+					<div class="shell">
+						<nav class="nav">
+							<a class="button" routerLink="/projects" routerLinkActive="is-active" ariaCurrentWhenActive="page">Projects</a> |
+							<a class="button" routerLink="/users" routerLinkActive="is-active" ariaCurrentWhenActive="page">Users</a> |
+							<a class="button" routerLink="/products" routerLinkActive="is-active" ariaCurrentWhenActive="page">Products</a>
+						</nav>
+					</div><!-- /.shell -->
+				</header>
+		
+				<main class="main">
+					<router-outlet></router-outlet>
+				</main><!-- /.main -->
+		
+				<footer class="footer">
+					<div class="shell">
+						<div class="footer__inner">
+							<div class="copyright">
+								<p>Copyright 2023</p>
+							</div><!-- /.copyright -->
+			
+							<div class="footer__nav">
+								<nav class="footer-nav">
+									<ul>
+										<li>
+											<a href="#">Resources</a>
+										</li>
+			
+										<li>
+											<a href="">About</a>
+										</li>
+									</ul>
+								</nav><!-- /.footer-nav -->
+							</div><!-- /.footer__nav -->
+						</div><!-- /.footer__inner -->
+					</div><!-- /.shell -->
+				</footer><!-- /.footer -->
+			</div><!-- /.wrapper__inner -->
+		</div><!-- /.wrapper -->
+	</mat-sidenav-content>
+</mat-sidenav-container>
 
-		<footer class="footer">
-			<div class="shell">
-				<div class="footer__inner">
-					<div class="copyright">
-						<p>Copyright 2023</p>
-					</div><!-- /.copyright -->
-	
-					<div class="footer__nav">
-						<nav class="footer-nav">
-							<ul>
-								<li>
-									<a href="#">Resources</a>
-								</li>
-	
-								<li>
-									<a href="">About</a>
-								</li>
-							</ul>
-						</nav><!-- /.footer-nav -->
-					</div><!-- /.footer__nav -->
-				</div><!-- /.footer__inner -->
-			</div><!-- /.shell -->
-		</footer><!-- /.footer -->
-	</div><!-- /.wrapper__inner -->
-</div><!-- /.wrapper -->
 

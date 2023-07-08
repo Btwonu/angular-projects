@@ -2,7 +2,6 @@ import { ActivatedRoute } from '@angular/router'
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Project } from '../../../models/Project';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-project',

@@ -11,6 +11,7 @@ export class ProjectsService {
 				new Project(
 					project.id,
 					project.title,
+					project.description,
 					project.requirements,
 					project.tags,
 					project.complexity
