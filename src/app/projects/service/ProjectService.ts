@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Project } from '../models/Project';
-import projectsData from '../db/projects.json';
+import { Project } from '../../models/Project';
+import projectsData from '../../db/projects.json';
+
 
 @Injectable()
 export class ProjectService {

@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { ProjectListComponent } from './project-list/project-list.component';
-import { ProjectComponent } from './project/project.component';
-import { UserListComponent } from './user-list/user-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 const routes: Routes = [
 	{
@@ -14,12 +11,8 @@ const routes: Routes = [
 	},
 	{
 		path: 'projects',
-		title: 'Projects',
-		component: ProjectListComponent,
-	},
-	{
-		path: 'projects/:id',
-		component: ProjectComponent,
+		loadChildren: () =>
+			import('./projects/projects.module').then((m) => m.ProjectsModule),
 	},
 	{
 		path: 'products',
@@ -29,7 +22,8 @@ const routes: Routes = [
 	{
 		path: 'users',
 		title: 'Users',
-		component: UserListComponent,
+		loadChildren: () =>
+			import('./users/users.module').then((m) => m.UsersModule),
 	},
 	{
 		path: '**',

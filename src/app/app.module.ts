@@ -5,12 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 
-import { ProjectService } from './services/ProjectService';
-import { UserService } from './services/UserService';
+import { ProjectService } from './projects/service/ProjectService';
+import { UserService } from './users/service/UserService';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ProjectComponent } from './project/project.component';
-import { ProjectListComponent } from './project-list/project-list.component';
+import { ProjectComponent } from './projects/ui/project/project.component';
+import { ProjectListComponent } from './projects/feature/project-list/project-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 

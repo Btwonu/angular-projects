@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { User } from '../models/User';
-import { UserService } from '../services/UserService';
+import { UserService } from '../users/service/UserService';
 
 @Component({
 	selector: 'app-user-list',
