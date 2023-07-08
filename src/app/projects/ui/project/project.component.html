@@ -1,4 +1,4 @@
-<mat-card appearance="raised" class="project">
+<mat-card appearance="raised" class="project h-full">
 	<mat-card-header>
 		<mat-card-title class="project__head">
 			<h4>
@@ -7,8 +7,10 @@
 		</mat-card-title>
 	</mat-card-header>
 
-	<mat-card-content class="project__content">
-		<mat-chip>{{ project.complexity }}</mat-chip>
+	<mat-card-content class="mb-6 js-equalize">
+		<mat-chip class="m-1" *ngFor="let tag of project.tags">
+			{{ tag }}
+		</mat-chip>
 	</mat-card-content>
 
 	<img class="project__image" mat-card-image src="https://picsum.photos/800/600">
@@ -17,7 +19,7 @@
 		<p>{{ project.description }}</p>
 	</mat-card-content>
 
-	<mat-card-actions align="end">
+	<mat-card-actions class="mt-auto" align="end">
 		<a routerLink="/projects/{{ project.id }}" mat-button>Build</a>
 	</mat-card-actions>
 </mat-card>
