@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../../models/Project';
 import projectsData from '../../db/projects.json';
-
+import { Observable, of } from 'rxjs';
 
 @Injectable()
-export class ProjectService {
+export class ProjectsService {
 	getAll(): Project[] {
 		const projects = projectsData.map(
 			(project: Project) =>
@@ -20,7 +20,7 @@ export class ProjectService {
 		return projects;
 	}
 
-	getOne(id: string): Project | undefined {
-		return projectsData.find((project: Project) => String(project.id) === id);
+	getOne(id: string): Observable<Project | undefined >{
+		return of(projectsData.find((project: Project) => String(project.id) === id));
 	}
 }

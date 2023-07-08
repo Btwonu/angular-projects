@@ -1,0 +1,19 @@
+<ng-container *ngIf="project$ | async as project">
+	<h1>{{ project.title }}</h1>
+
+	<div class="requirements">
+		<h2>Requirements</h2>
+
+		<ul>
+			<li *ngFor="let requirement of project.requirements">{{ requirement }}</li>
+		</ul>
+	</div><!-- /.requirements -->
+
+	<div class="tags">
+		<h2>Tags</h2>
+		
+		<ul>
+			<li *ngFor="let tag of project.tags">{{ tag }}</li>
+		</ul>
+	</div><!-- /.tags -->
+</ng-container>

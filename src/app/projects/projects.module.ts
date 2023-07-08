@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectsRoutingModule } from './projects-routing.module';
+import { ProjectDetailComponent } from './feature/project-detail/project-detail.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ProjectDetailComponent
+  ],
   imports: [
     CommonModule,
 	ProjectsRoutingModule,

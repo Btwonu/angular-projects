@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { UserComponent } from './users/ui/user/user.component';
 
-import { ProjectService } from './projects/service/ProjectService';
+import { ProjectsService } from './projects/service/projects.service';
 import { UserService } from './users/service/UserService';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +24,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 		PageNotFoundComponent,
 	],
 	imports: [BrowserModule, HttpClientModule, AppRoutingModule],
-	providers: [ProjectService, UserService],
+	providers: [ProjectsService, UserService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

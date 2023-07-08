@@ -1,21 +1,23 @@
-<h4>
-	<a routerLink="/projects/1">{{ project.title }}</a>
-</h4>
+<div class="project">
+	<div class="project__head">
+		<h4>
+			<a routerLink="/projects/{{ project.id }}">{{ project.title }}</a>
+		</h4>
+	</div><!-- /.project__head -->
 
-<p>{{ id }}</p>
+	<div class="project__image">
+		<img src="https://picsum.photos/800/600" alt=""/>
+	</div><!-- /.project__image -->
 
-<ul class="requirements">
-	<li *ngFor="let requirement of project.requirements">
-		{{ requirement }}
-	</li>
-</ul>
+	<div class="project__inner">
+		<div class="project__meta">
+			<span>Complexity: </span>
 
-<ul class="tags">
-	<li *ngFor="let tag of project.tags">
-		{{ tag }}
-	</li>
-</ul>
-
-<span>{{ project.complexity }}</span>
-
-<button (click)="clickHandler(project.id)">Build</button>
+			<strong>{{ project.complexity }}</strong>
+		</div><!-- /.project__meta -->
+	
+		<div class="project__actions">
+			<button class="btn" (click)="clickHandler(project.id)">Build</button>
+		</div><!-- /.project__actions -->
+	</div><!-- /.project__inner -->
+</div><!-- /.project -->

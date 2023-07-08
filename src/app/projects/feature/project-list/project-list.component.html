@@ -1,3 +1,16 @@
-<h2>Projects</h2>
+<section class="section">
+	<div class="shell">
+		<div class="section__head">
+			<h2>Projects</h2>
+		</div><!-- /.section__head -->
 
-<app-project *ngFor="let project of projects" [project]="project" (buildEvent)="buildEventHandler($event)"></app-project>
+		<div class="projects">
+			<div class="projects__items">
+				<div class="projects__item" *ngFor="let project of projects">
+					<app-project [project]="project" (buildEvent)="buildEventHandler($event)"></app-project>
+				</div><!-- /.projects__item -->
+			</div><!-- /.projects__items -->
+		</div><!-- /.projects -->
+	</div><!-- /.shell -->
+</section><!-- /.section -->
+

@@ -1,0 +1,40 @@
+.project {
+	padding: 2rem;
+	border: var(--border);
+	border-radius: var(--brds);
+	box-shadow: var(--shadow);
+
+	.project__head {
+		margin-bottom: 2rem;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		h4 {
+			margin-bottom: 0;
+		}
+	}
+
+	.project__image {
+		position: relative;
+		padding-bottom: 56.25%;
+		margin-bottom: 2rem;
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.project__inner {
+		display: flex;
+		gap: 1rem;
+		justify-content: space-between;
+	}
+}

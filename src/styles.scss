@@ -189,8 +189,113 @@ select {
 
 :root {
 	--ff-open-sans: "Open Sans", sans-serif;
+	--border: 1px solid rgba(0, 0, 0, .2);
+	--shadow: 1px 1px 10px 0px rgba(0, 0, 0, .3);
+	--brds: 14px;
+	--c-dark: #111;
+	--c-light: #eee;
+	--t-dur: .2s;
+	--t-timing: ease;
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+	.wrapper__inner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+}
+
+html {
+	font-size: 62.5%;
 }
 
 body {
 	font-family: var(--ff-open-sans);
+	font-size: 1.6rem;
+}
+
+nav .is-active {
+	color: red;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+h2 {
+	font-size: 4.8rem;
+}
+
+h3 {
+	font-size: 3.6rem;
+}
+
+h4 {
+	font-size: 3rem;
+}
+
+h5 {
+	font-size: 2.4rem;
+}
+
+h6 {
+	font-size: 2rem;
+}
+
+.text-sm {
+	font-size: 1.4rem;
+}
+
+.text-tiny {
+	font-size: 1.2rem;
+}
+
+.btn {
+	all: unset;
+	padding: 8px 16px;
+	border: var(--border);
+	border-radius: var(--brds);
+	cursor: pointer;
+	transition-property: background-color, color;
+	transition-duration: var(--t-dur);
+	transition-timing-function: var(--t-timing);
+
+	&:hover {
+		background: var(--c-dark);
+		color: var(--c-light);
+	}
+}
+
+.shell {
+	max-width: 1440px;
+	padding: 0 40px;
+	width: 100%;
+}
+
+.header {
+	padding: 60px 0;
+}
+
+.footer {
+	padding: 80px 0;
+
+	.footer__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.section {
+	.section__head {
+		margin-bottom: 20px;
+	}
 }
