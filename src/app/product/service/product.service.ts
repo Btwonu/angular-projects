@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
 	providedIn: 'root',
 })
-export class ProductsService {
+export class ProductService {
 	PRODUCTS_URL: string = 'https://dummyjson.com/products';
 
 	constructor(private http: HttpClient) {

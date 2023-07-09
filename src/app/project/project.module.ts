@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectsRoutingModule } from './projects-routing.module';
+import { ProjectRoutingModule } from './project-routing.module';
 import { ProjectDetailComponent } from './feature/project-detail/project-detail.component';
 
 import { MatCardModule } from '@angular/material/card';
@@ -18,11 +18,11 @@ import { MatChipsModule } from '@angular/material/chips';
 	],
 	imports: [
 		CommonModule,
-		ProjectsRoutingModule,
+		ProjectRoutingModule,
 		MatCardModule,
 		MatIconModule,
 		MatButtonModule,
 		MatChipsModule,
 	],
 })
-export class ProjectsModule {}
+export class ProjectModule {}

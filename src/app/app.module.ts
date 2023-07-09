@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { UserComponent } from './users/ui/user/user.component';
+import { UserComponent } from './user/ui/user/user.component';
 
-import { ProjectsService } from './projects/service/projects.service';
-import { UserService } from './users/service/UserService';
+import { ProjectService } from './project/service/project.service';
+import { UserService } from './user/service/UserService';
 
 import { AppRoutingModule } from './app-routing.module';
-import { UserListComponent } from './users/feature/user-list/user-list.component';
+import { UserListComponent } from './user/feature/user-list/user-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -35,7 +35,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 		MatSidenavModule,
 		MatToolbarModule,
 	],
-	providers: [ProjectsService, UserService],
+	providers: [ProjectService, UserService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -4,7 +4,7 @@ import projectsData from '../../db/projects.json';
 import { Observable, of } from 'rxjs';
 
 @Injectable()
-export class ProjectsService {
+export class ProjectService {
 	getAll(): Project[] {
 		const projects = projectsData.map(
 			(project: Project) =>

@@ -12,18 +12,18 @@ const routes: Routes = [
 	{
 		path: 'projects',
 		loadChildren: () =>
-			import('./projects/projects.module').then((m) => m.ProjectsModule),
+			import('./project/project.module').then((m) => m.ProjectModule),
 	},
 	{
 		path: 'products',
 		loadChildren: () =>
-			import('./products/products.module').then((m) => m.ProductsModule),
+			import('./product/product.module').then((m) => m.ProductModule),
 	},
 	{
 		path: 'users',
 		title: 'Users',
 		loadChildren: () =>
-			import('./users/users.module').then((m) => m.UsersModule),
+			import('./user/user.module').then((m) => m.UserModule),
 	},
 	{
 		path: '**',

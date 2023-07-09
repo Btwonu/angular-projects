@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../../service/products.service';
+import { ProductService } from '../../service/product.service';
 import { map } from 'rxjs';
 
 @Component({
@@ -10,9 +10,9 @@ import { map } from 'rxjs';
 export class ProductListComponent implements OnInit {
 	products$: any;
 	
-	constructor(private productsService: ProductsService) {}
+	constructor(private productService: ProductService) {}
 
 	ngOnInit(): void {
-		this.products$ = this.productsService.getAll().pipe(map(result => result.products));
+		this.products$ = this.productService.getAll().pipe(map(result => result.products));
 	}
 }

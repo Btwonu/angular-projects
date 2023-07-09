@@ -1,0 +1,33 @@
+<section class="section">
+	<div class="shell">
+		<ng-container *ngIf="project$ | async as project">
+			<div class="instance">
+				<div class="instance__head">
+					<h1>{{ project.title }}</h1>
+				</div><!-- /.instance__head -->
+	
+				<div class="instance__content mb-6">
+					<div class="requirements mb-6">
+						<h2>Requirements</h2>
+				
+						<ul>
+							<li *ngFor="let requirement of project.requirements">{{ requirement }}</li>
+						</ul>
+					</div><!-- /.requirements -->
+				
+					<div class="tags">
+						<h2>Tags</h2>
+						
+						<ul>
+							<li *ngFor="let tag of project.tags">{{ tag }}</li>
+						</ul>
+					</div><!-- /.tags -->
+				</div><!-- /.instance__content -->
+	
+				<div class="instance__actions">
+					<button mat-raised-button color="primary" (click)="generateInstance()">Build</button>
+				</div><!-- /.instance__actions -->
+			</div><!-- /.instance -->
+		</ng-container>
+	</div><!-- /.shell -->
+</section><!-- /.section -->

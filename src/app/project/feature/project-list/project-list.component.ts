@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../../../models/Project';
-import { ProjectsService } from '../../service/projects.service';
+import { ProjectService } from '../../service/project.service';
 
 @Component({
   selector: 'app-project-list',
@@ -10,8 +10,8 @@ import { ProjectsService } from '../../service/projects.service';
 export class ProjectListComponent {
 	@Input() projects: Project[] = [];
 
-	constructor(private projectsService: ProjectsService) {
-		this.projects = this.projectsService.getAll();
+	constructor(private projectService: ProjectService) {
+		this.projects = this.projectService.getAll();
 	}
 
 	buildEventHandler(id: string) {

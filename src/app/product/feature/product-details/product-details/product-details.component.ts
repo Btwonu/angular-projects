@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from 'src/app/products/service/products.service';
+import { ProductService } from 'src/app/product/service/product.service';
 import { ActivatedRoute } from '@angular/router'
 import { tap, switchMap, Observable } from 'rxjs';
 
@@ -11,13 +11,13 @@ import { tap, switchMap, Observable } from 'rxjs';
 export class ProductDetailsComponent implements OnInit {
 	product$!: Observable<any>;
 	
-	constructor(private productsService: ProductsService, private route: ActivatedRoute) {}
+	constructor(private productService: ProductService, private route: ActivatedRoute) {}
 
 	ngOnInit(): void {
 		this.product$ = this.route.params.pipe(
 			tap((params) => console.log(params)),
 			switchMap((params) => {
-				return this.productsService.getOne(params.id);
+				return this.productService.getOne(params.id);
 			})
 		)
 	}
