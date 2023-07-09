@@ -231,3 +231,19 @@ h6 {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.ico {
+	position: relative;
+	width: 1.6rem;
+	height: 1.6rem;
+	display: block;
+
+	img, svg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}

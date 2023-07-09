@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProjectService } from '../../service/project.service';
 import { tap, switchMap, Observable } from 'rxjs';
+import { InstanceService } from 'src/app/instance/service/instance.service';
 
 @Component({
   selector: 'app-project-detail',
@@ -11,9 +12,11 @@ import { tap, switchMap, Observable } from 'rxjs';
 export class ProjectDetailComponent implements OnInit {
 	project$!: Observable<any>;
 
-	constructor(private projectService: ProjectService, private route: ActivatedRoute) {}
+	constructor(private router: Router, private projectService: ProjectService, private route: ActivatedRoute, private instanceService: InstanceService) {}
 
 	ngOnInit(): void {
+		console.log(this.route.params);
+		
 		this.project$ = this.route.params.pipe(
 			tap((params) => console.log(params)),
 			switchMap((params) => {
@@ -23,7 +26,11 @@ export class ProjectDetailComponent implements OnInit {
 	}
 
 	generateInstance() {
-		console.log('click');
-		
+		// TODO
+		// Get form data
+		// Send data to service
+		const { id } = JSON.parse(this.instanceService.store());
+
+		this.router.navigate(['instances', id], );
 	}
 }

@@ -1,0 +1,18 @@
+.instance {
+	.instance__repo {
+		a {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		.ico {
+			width: 2.4rem;
+			height: 2.4rem;
+		}
+
+		.mdc-button__label {
+			display: flex;
+		}
+	}
+}
