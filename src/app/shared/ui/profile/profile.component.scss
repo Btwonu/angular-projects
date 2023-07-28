@@ -1,0 +1,39 @@
+.profile {
+	display: flex;
+	justify-content: center;
+	min-height: 200px;
+	padding: 40px;
+
+	.profile__cols {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.profile__col {
+		flex: 1 0 33%;
+	}
+
+	.profile__avatar {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.profile__head {}
+
+	.profile__content {}
+
+	.profile__actions {}
+}

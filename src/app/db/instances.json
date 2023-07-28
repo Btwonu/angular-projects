@@ -1,8 +1,45 @@
 [
 	{
-		"id": "1",
+		"id": "6fbe024f-2316-4265-aa6e-8d65a837e308",
 		"title": "My custom project",
 		"repo": "https://github.com/my-custom-project",
-		"team": []
+		"team": [
+			{
+				"name": "John Doe",
+				"avatarUrl": "https://i.pravatar.cc/300",
+				"role": "Frontend Developer",
+				"githubUrl": "https://github.com/user/my-user"
+			},
+			{
+				"name": "Jane Smith",
+				"avatarUrl": "https://i.pravatar.cc/300",
+				"role": "Fullstack Developer",
+				"githubUrl": "https://github.com/user/my-user"
+			},
+			{
+				"name": "Michael Johnson",
+				"avatarUrl": "https://i.pravatar.cc/300",
+				"role": "Backend Developer",
+				"githubUrl": "https://github.com/user/my-user"
+			},
+			{
+				"name": "Emily Brown",
+				"avatarUrl": "https://i.pravatar.cc/300",
+				"role": "Frontend Developer",
+				"githubUrl": "https://github.com/user/my-user"
+			},
+			{
+				"name": "David Wilson",
+				"avatarUrl": "https://i.pravatar.cc/300",
+				"role": "Fullstack Developer",
+				"githubUrl": "https://github.com/user/my-user"
+			},
+			{
+				"name": "Sarah Davis",
+				"avatarUrl": "https://i.pravatar.cc/300",
+				"role": "Backend Developer",
+				"githubUrl": "https://github.com/user/my-user"
+			}
+		]
 	}
 ]

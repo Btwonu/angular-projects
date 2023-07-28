@@ -8,7 +8,7 @@ import { ProjectService } from '../../service/project.service';
   styleUrls: ['./project-list.component.scss']
 })
 export class ProjectListComponent {
-	@Input() projects: Project[] = [];
+	projects: Project[] = [];
 
 	constructor(private projectService: ProjectService) {
 		this.projects = this.projectService.getAll();

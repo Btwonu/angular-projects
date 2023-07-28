@@ -14,14 +14,8 @@ export class InstanceDetailComponent implements OnInit {
 	constructor(private route: ActivatedRoute, private instanceService: InstanceService) {}
 
 	ngOnInit(): void {
-		// console.log(this.route.params);
-		// this.route.params.subscribe(params => {
-		// 	console.log(params); // This works
-			
-		// })
-
 		this.instance$ = this.route.params.pipe(
-			tap((params) => console.log(params)), // this doesn't
+			tap((params) => console.log(params)),
 			switchMap((params) => {
 				return this.instanceService.getOne(params.id);
 			})
