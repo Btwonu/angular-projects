@@ -31,6 +31,6 @@ export class ProjectDetailComponent implements OnInit {
 		// Send data to service
 		const { id } = JSON.parse(this.instanceService.store());
 
-		this.router.navigate(['instances', id], );
+		this.router.navigate(['instances', id]);
 	}
 }

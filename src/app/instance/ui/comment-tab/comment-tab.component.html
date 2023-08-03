@@ -1,5 +1,41 @@
 <section class="section">
 	<div class="shell">
-		Comments
+		<div *ngIf="comments.length">
+			<div class="comments">
+				<div class="comments__items">
+					<div *ngFor="let comment of comments" class="comments__item">
+						<div class="comment">
+							<div class="comment__cols">
+								<div class="comment__col">
+									<div class="comment__avatar">
+										<img src="{{ comment.user.avatarUrl }}" alt="{{ comment.user.name }}'s avatar"/>
+									</div><!-- /.comment__avatar -->
+								</div><!-- /.comment__col -->
+
+								<div class="comment__col">
+									<div class="comment__head">
+										{{ comment.user.name }}
+									</div><!-- /.comment__head -->
+
+									<div class="comment__body">
+										{{ comment.body }}
+									</div><!-- /.comment__body -->
+
+									<div class="comment__actions">
+										<div class="comment__likes">
+											{{comment.likes}}
+										</div><!-- /.comment__likes -->
+
+										<div class="comment__reply">
+											<a href="#">Reply</a>
+										</div><!-- /.comment__reply -->
+									</div><!-- /.comment__actions -->
+								</div><!-- /.comment__col -->
+							</div><!-- /.comment__cols -->
+						</div><!-- /.comment -->
+					</div><!-- /.comments__item -->
+				</div><!-- /.comments__items -->
+			</div><!-- /.comments -->
+		</div>
 	</div><!-- /.shell -->
 </section><!-- /.section -->

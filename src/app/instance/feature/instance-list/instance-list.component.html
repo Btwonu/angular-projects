@@ -1,1 +1,39 @@
-<p>instance-list works!</p>
+<div class="instances">
+	<div class="instances__items">
+		<div *ngFor="let instance of instances" class="instances__item">
+			<mat-card class="instance">
+				<mat-card-header>
+					<mat-card-title>
+						{{ instance.title }}
+					</mat-card-title>
+				</mat-card-header>
+
+				<mat-card-content>
+					<mat-divider></mat-divider>
+
+					<div class="slider-users mt-4">
+						<swiper [config]="sliderUsersConfig">
+							<ng-template *ngFor="let teamMember of instance.team" swiperSlide>
+								
+								<app-avatar *ngIf="teamMember"
+									imgSrc="{{ teamMember.avatarUrl }}"
+									imgAlt="Alt"
+									size="30px"
+								></app-avatar>
+							</ng-template>
+							<ng-template swiperSlide>Slide 2</ng-template>
+							<ng-template swiperSlide>Slide 3</ng-template>
+							<ng-template swiperSlide>Slide 4</ng-template>
+							<ng-template swiperSlide>Slide 5</ng-template>
+							<ng-template swiperSlide>Slide 6</ng-template>
+						</swiper>
+					</div>
+					<!-- /.slider-users -->
+				</mat-card-content>
+			</mat-card>
+		</div>
+		<!-- /.instances__item -->
+	</div>
+	<!-- /.instances__items -->
+</div>
+<!-- /.instances -->

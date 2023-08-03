@@ -6,39 +6,227 @@
 		"team": [
 			{
 				"name": "John Doe",
-				"avatarUrl": "https://i.pravatar.cc/300",
+				"avatarUrl": "https://i.pravatar.cc/300?u=1",
 				"role": "Frontend Developer",
 				"githubUrl": "https://github.com/user/my-user"
 			},
 			{
 				"name": "Jane Smith",
-				"avatarUrl": "https://i.pravatar.cc/300",
+				"avatarUrl": "https://i.pravatar.cc/300?u=2",
 				"role": "Fullstack Developer",
 				"githubUrl": "https://github.com/user/my-user"
 			},
 			{
 				"name": "Michael Johnson",
-				"avatarUrl": "https://i.pravatar.cc/300",
+				"avatarUrl": "https://i.pravatar.cc/300?u=3",
 				"role": "Backend Developer",
 				"githubUrl": "https://github.com/user/my-user"
 			},
 			{
 				"name": "Emily Brown",
-				"avatarUrl": "https://i.pravatar.cc/300",
+				"avatarUrl": "https://i.pravatar.cc/300?u=4",
 				"role": "Frontend Developer",
 				"githubUrl": "https://github.com/user/my-user"
 			},
 			{
 				"name": "David Wilson",
-				"avatarUrl": "https://i.pravatar.cc/300",
+				"avatarUrl": "https://i.pravatar.cc/300?u=5",
 				"role": "Fullstack Developer",
 				"githubUrl": "https://github.com/user/my-user"
 			},
 			{
 				"name": "Sarah Davis",
-				"avatarUrl": "https://i.pravatar.cc/300",
+				"avatarUrl": "https://i.pravatar.cc/300?u=6",
 				"role": "Backend Developer",
 				"githubUrl": "https://github.com/user/my-user"
+			}
+		],
+		"comments": [
+			{
+				"user": {
+					"name": "John Doe",
+					"avatarUrl": "https://i.pravatar.cc/300?u=7"
+				},
+				"body": "Nice work! You have created something spectacular!",
+				"likes": 5,
+				"replies": [
+					{
+						"user": "Jane Doe",
+						"body": "Nice comment, bro",
+						"likes": 0,
+						"replies": []
+					},
+					{
+						"user": "Jennifer Doe",
+						"body": "I also think so",
+						"likes": 0,
+						"replies": []
+					}
+				]
+			},
+			{
+				"user": {
+					"name": "Samsara",
+					"avatarUrl": "https://i.pravatar.cc/300?u=8"
+				},
+				"body": "Mega comment",
+				"likes": 0,
+				"replies": []
+			},
+			{
+				"user": {
+					"name": "Idk",
+					"avatarUrl": "https://i.pravatar.cc/300?u=9"
+				},
+				"body": "It's good",
+				"likes": 0,
+				"replies": []
+			}
+		]
+	},
+	{
+		"id": "c9eb5401-01bb-4a91-b59b-3f97700765c9",
+		"title": "Awesome App",
+		"repo": "https://github.com/awesome-app",
+		"team": [
+			{
+				"name": "Michael Johnson",
+				"avatarUrl": "https://i.pravatar.cc/300?u=10",
+				"role": "Frontend Developer",
+				"githubUrl": "https://github.com/user/michaeljohnson"
+			},
+			{
+				"name": "Emily Brown",
+				"avatarUrl": "https://i.pravatar.cc/300?u=11",
+				"role": "Fullstack Developer",
+				"githubUrl": "https://github.com/user/emilybrown"
+			},
+			{
+				"name": "David Wilson",
+				"avatarUrl": "https://i.pravatar.cc/300?u=12",
+				"role": "Backend Developer",
+				"githubUrl": "https://github.com/user/davidwilson"
+			}
+		],
+		"comments": [
+			{
+				"user": {
+					"name": "Jane Doe",
+					"avatarUrl": "https://i.pravatar.cc/300?u=13"
+				},
+				"body": "Impressive work! I love the design.",
+				"likes": 10,
+				"replies": []
+			},
+			{
+				"user": {
+					"name": "John Smith",
+					"avatarUrl": "https://i.pravatar.cc/300?u=14"
+				},
+				"body": "Well done! Keep up the great work!",
+				"likes": 3,
+				"replies": []
+			}
+		]
+	},
+	{
+		"id": "ac60c0fc-e1f2-43f3-9271-df6e6ed63f53",
+		"title": "E-Commerce Website",
+		"repo": "https://github.com/e-commerce",
+		"team": [
+			{
+				"name": "Sarah Davis",
+				"avatarUrl": "https://i.pravatar.cc/300?u=15",
+				"role": "Frontend Developer",
+				"githubUrl": "https://github.com/user/sarahdavis"
+			},
+			{
+				"name": "David Wilson",
+				"avatarUrl": "https://i.pravatar.cc/300?u=16",
+				"role": "Fullstack Developer",
+				"githubUrl": "https://github.com/user/davidwilson"
+			},
+			{
+				"name": "Michael Johnson",
+				"avatarUrl": "https://i.pravatar.cc/300?u=17",
+				"role": "Backend Developer",
+				"githubUrl": "https://github.com/user/michaeljohnson"
+			}
+		],
+		"comments": []
+	},
+	{
+		"id": "3d5aa6e1-977d-4ae1-bb56-46f5b8a73e79",
+		"title": "Game Development Project",
+		"repo": "https://github.com/game-dev",
+		"team": [
+			{
+				"name": "Jane Smith",
+				"avatarUrl": "https://i.pravatar.cc/300?u=18",
+				"role": "Frontend Developer",
+				"githubUrl": "https://github.com/user/janesmith"
+			},
+			{
+				"name": "John Doe",
+				"avatarUrl": "https://i.pravatar.cc/300?u=19",
+				"role": "Fullstack Developer",
+				"githubUrl": "https://github.com/user/johndoe"
+			}
+		],
+		"comments": [
+			{
+				"user": {
+					"name": "Samsara",
+					"avatarUrl": "https://i.pravatar.cc/300?u=20"
+				},
+				"body": "I can't wait to play this game!",
+				"likes": 2,
+				"replies": []
+			}
+		]
+	},
+	{
+		"id": "8a1794f3-1ae2-4b47-8a3f-df119ff48bf2",
+		"title": "Blog Website",
+		"repo": "https://github.com/blog-website",
+		"team": [
+			{
+				"name": "Emily Brown",
+				"avatarUrl": "https://i.pravatar.cc/300?u=21",
+				"role": "Frontend Developer",
+				"githubUrl": "https://github.com/user/emilybrown"
+			},
+			{
+				"name": "John Doe",
+				"avatarUrl": "https://i.pravatar.cc/300?u=22",
+				"role": "Fullstack Developer",
+				"githubUrl": "https://github.com/user/johndoe"
+			},
+			{
+				"name": "Michael Johnson",
+				"avatarUrl": "https://i.pravatar.cc/300?u=23",
+				"role": "Backend Developer",
+				"githubUrl": "https://github.com/user/michaeljohnson"
+			}
+		],
+		"comments": [
+			{
+				"user": {
+					"name": "Idk",
+					"avatarUrl": "https://i.pravatar.cc/300?u=24"
+				},
+				"body": "Looks amazing! Great job!",
+				"likes": 8,
+				"replies": []
+			},
+			{
+				"user": {
+					"name": "Samsara",
+					"avatarUrl": "https://i.pravatar.cc/300?u=25"
+				},
+				"body": "Nice work! You have created something spectacular!",
+				"likes": 5,
+				"replies": []
 			}
 		]
 	}

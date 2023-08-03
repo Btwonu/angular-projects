@@ -17,6 +17,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
 	declarations: [
@@ -24,6 +28,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 		UserComponent,
 		UserListComponent,
 		PageNotFoundComponent,
+		DashboardComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -34,6 +39,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 		MatIconModule,
 		MatSidenavModule,
 		MatToolbarModule,
+		MatGridListModule,
+		MatCardModule,
+		MatMenuModule,
 	],
 	providers: [ProjectService, UserService],
 	bootstrap: [AppComponent],

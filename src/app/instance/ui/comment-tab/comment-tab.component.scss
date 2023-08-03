@@ -1,0 +1,47 @@
+.comment {
+	padding: 10px 0;
+
+	.comment__cols {
+		display: grid;
+		grid-template-columns: 50px 1fr;
+		grid-gap: 10px;
+	}
+
+	.comment__avatar {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.comment__head {
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+
+	.comment__body {
+		margin-bottom: 8px;
+	}
+
+	.comment__actions {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+}
+
+.comments {
+	.comments__item {
+		border-bottom: 1px solid rgb(228, 212, 212);
+	}
+}

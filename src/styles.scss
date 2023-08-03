@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '~swiper/swiper-bundle.css';
+
 /* Box sizing rules */
 *,
 *::before,
@@ -175,6 +177,7 @@ h6 {
 	width: 100%;
 	flex-grow: 1;
 	flex-shrink: 0;
+	overflow: hidden;
 }
 
 .sidebar {

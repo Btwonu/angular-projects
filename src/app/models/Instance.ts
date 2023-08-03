@@ -6,5 +6,6 @@ export class Instance implements IInstance {
 		public title: string,
 		public repo: string,
 		public team: Object[],
+		public comments: Object[],
 	) {}
 }

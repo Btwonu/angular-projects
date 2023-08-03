@@ -12,6 +12,9 @@ import { TeamTabComponent } from './ui/team-tab/team-tab.component';
 import { RepoTabComponent } from './ui/repo-tab/repo-tab.component';
 import { CommentTabComponent } from './ui/comment-tab/comment-tab.component';
 import { SharedModule } from '../shared/shared.module';
+import { SwiperModule } from 'swiper/angular';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
 	declarations: [
@@ -29,6 +32,9 @@ import { SharedModule } from '../shared/shared.module';
 		MatIconModule,
 		MatTabsModule,
 		SharedModule,
+		SwiperModule,
+		MatCardModule,
+		MatDividerModule,
 	],
 })
 export class InstanceModule {}

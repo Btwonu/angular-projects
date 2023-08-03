@@ -1,0 +1,21 @@
+.instances {
+	--col-gap: 10px;
+	--row-gap: 10px;
+
+	.instances__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: calc(-1 * var(--row-gap)) calc(-1 * var(--col-gap));
+	}
+
+	.instances__item {
+		padding: var(--row-gap) var(--col-gap);
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+
+.slider-users {
+	width: 100%;
+	max-width: 100%;
+}
