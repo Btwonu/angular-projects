@@ -1,11 +1,22 @@
-<section class="section">
-	<div class="shell">
-		<h2>Users</h2>
-		
-		<app-user *ngFor="let user of users" [user]="user"></app-user>
-		
-		<button style="display: block;" (click)="generateUser()">Generate new user</button>
-		
-		{{customValue}}
-	</div><!-- /.shell -->
-</section><!-- /.section -->
+<div class="mat-elevation-z8">
+	<table mat-table [dataSource]="data">
+		<ng-container matColumnDef="username">
+			<th mat-header-cell *matHeaderCellDef>Name</th>
+			<td mat-cell *matCellDef="let element">{{ element.username }}</td>
+		</ng-container>
+
+		<ng-container matColumnDef="email">
+			<th mat-header-cell *matHeaderCellDef>Email</th>
+			<td mat-cell *matCellDef="let element">{{ element.email }}</td>
+		</ng-container>
+
+		<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+		<tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+	</table>
+
+	<mat-paginator
+		showFirstLastButtons
+		aria-label="Select page of periodic elements"
+	>
+	</mat-paginator>
+</div>
