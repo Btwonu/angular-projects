@@ -16,6 +16,7 @@ import { SwiperModule } from 'swiper/angular';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { InstanceItemComponent } from './ui/instance-item/instance-item.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
 	declarations: [
@@ -37,6 +38,7 @@ import { InstanceItemComponent } from './ui/instance-item/instance-item.componen
 		SwiperModule,
 		MatCardModule,
 		MatDividerModule,
+		MatProgressBarModule,
 	],
 })
 export class InstanceModule {}

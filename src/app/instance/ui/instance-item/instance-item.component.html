@@ -1,17 +1,43 @@
 <mat-card class="instance h-full">
-	<mat-card-header>
+	<mat-card-header class="justify-between gap-4">
 		<mat-card-title class="pb-2 js-equalize">
 			{{ instance.title }}
 		</mat-card-title>
+
+		<div class="instance__like-btn flex-[0_0_24px] pt-2">
+			<button (click)="likeInstance(instance.id)">
+				<mat-icon>favorite</mat-icon>
+			</button>
+		</div>
+		<!-- /.instance__like-btn -->
 	</mat-card-header>
 
 	<mat-card-content>
 		<mat-divider></mat-divider>
 
-		<div class="slider-users mt-4">
+		<div class="instance__meta my-4">
+			<p>
+				<strong>Likes: </strong>
+
+				<span>30</span>
+			</p>
+		</div>
+		<!-- /.instance__meta -->
+
+		<mat-divider></mat-divider>
+
+		<div class="slider-users my-4">
+			<p>
+				<strong>Team Members</strong>
+			</p>
+
 			<swiper [config]="sliderUsersConfig">
-				<ng-template *ngFor="let teamMember of instance.team" swiperSlide>
-					<app-avatar *ngIf="teamMember"
+				<ng-template
+					*ngFor="let teamMember of instance.team"
+					swiperSlide
+				>
+					<app-avatar
+						*ngIf="teamMember"
 						imgSrc="{{ teamMember.avatarUrl }}"
 						imgAlt="Alt"
 						size="40px"
@@ -21,4 +47,8 @@
 		</div>
 		<!-- /.slider-users -->
 	</mat-card-content>
+
+	<mat-card-footer class="pt-4">
+		<mat-progress-bar [ngClass]="{'is-visible': loading}" mode="indeterminate"></mat-progress-bar>
+	</mat-card-footer>
 </mat-card>

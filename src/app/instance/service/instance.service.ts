@@ -38,4 +38,9 @@ export class InstanceService {
 	getOne(id: string): Observable<Instance | undefined > {
 		return of(instancesData.find((instance: Instance) => String(instance.id) === id));
 	}
+
+	like(id: string) {
+		// add like to specified instance
+		console.log(id);
+	}
 }
