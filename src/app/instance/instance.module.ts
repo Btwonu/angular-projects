@@ -15,6 +15,7 @@ import { SharedModule } from '../shared/shared.module';
 import { SwiperModule } from 'swiper/angular';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { InstanceItemComponent } from './ui/instance-item/instance-item.component';
 
 @NgModule({
 	declarations: [
@@ -24,6 +25,7 @@ import { MatDividerModule } from '@angular/material/divider';
 		TeamTabComponent,
 		RepoTabComponent,
 		CommentTabComponent,
+		InstanceItemComponent,
 	],
 	imports: [
 		CommonModule,
