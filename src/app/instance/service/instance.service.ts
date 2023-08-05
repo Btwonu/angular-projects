@@ -17,8 +17,8 @@ export class InstanceService {
 					instance.id,
 					instance.title,
 					instance.repo,
-					instance.comments,
 					instance.team,
+					instance.comments,
 				)
 		);
 

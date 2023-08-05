@@ -51,13 +51,19 @@
 				"likes": 5,
 				"replies": [
 					{
-						"user": "Jane Doe",
+						"user": {
+							"name": "Jane Doe",
+							"avatarUrl": "https://i.pravatar.cc/300?u=13"
+						},
 						"body": "Nice comment, bro",
 						"likes": 0,
 						"replies": []
 					},
 					{
-						"user": "Jennifer Doe",
+						"user": {
+							"name": "Jennifer Doe",
+							"avatarUrl": "https://i.pravatar.cc/300?u=26"
+						},
 						"body": "I also think so",
 						"likes": 0,
 						"replies": []

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import SwiperCore, { Swiper, SwiperOptions } from 'swiper';
 import { InstanceService } from '../../service/instance.service';
 import { IInstance } from '../../../interfaces/instance.interface';
@@ -7,6 +7,7 @@ import { IInstance } from '../../../interfaces/instance.interface';
 	selector: 'app-instance-list',
 	templateUrl: './instance-list.component.html',
 	styleUrls: ['./instance-list.component.scss'],
+	encapsulation: ViewEncapsulation.None,
 })
 export class InstanceListComponent {
 	instances: IInstance[] = [];
@@ -16,7 +17,7 @@ export class InstanceListComponent {
 	}
 
 	sliderUsersConfig: SwiperOptions = {
-		slidesPerView: 1,
-		spaceBetween: 50,
+		slidesPerView: 'auto',
+		spaceBetween: -5,
 	};
 }
