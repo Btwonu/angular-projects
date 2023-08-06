@@ -165,20 +165,7 @@
 		"id": "3d5aa6e1-977d-4ae1-bb56-46f5b8a73e79",
 		"title": "Game Development Project",
 		"repo": "https://github.com/game-dev",
-		"team": [
-			{
-				"name": "Jane Smith",
-				"avatarUrl": "https://i.pravatar.cc/300?u=18",
-				"role": "Frontend Developer",
-				"githubUrl": "https://github.com/user/janesmith"
-			},
-			{
-				"name": "John Doe",
-				"avatarUrl": "https://i.pravatar.cc/300?u=19",
-				"role": "Fullstack Developer",
-				"githubUrl": "https://github.com/user/johndoe"
-			}
-		],
+		"team": [],
 		"comments": [
 			{
 				"user": {

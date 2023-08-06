@@ -18,9 +18,7 @@ export class UserListComponent {
 
 	@ViewChild('paginator') paginator!: MatPaginator;
 
-	constructor(private userService: UserService) {
-		
-	}
+	constructor(private userService: UserService) {}
 
 	ngAfterViewInit() {
 		this.dataSource.paginator = this.paginator;

@@ -1,13 +1,28 @@
 <section class="section">
 	<div class="shell">
 		<div class="profiles">
-			<div class="profiles__items">
-				<div *ngIf="teamMembers.length">
-					<div class="profiles__item" *ngFor="let member of teamMembers">
+			<ng-container *ngIf="teamMembers.length">
+				<div class="profiles__items">
+					<div
+						class="profiles__item"
+						*ngFor="let member of teamMembers"
+					>
 						<app-profile [teamMember]="member"></app-profile>
-					</div><!-- /.profiles__item -->
+					</div>
+					<!-- /.profiles__item -->
 				</div>
-			</div><!-- /.profiles__items -->
-		</div><!-- /.profiles -->
-	</div><!-- /.shell -->
-</section><!-- /.section -->
+				<!-- /.profiles__items -->
+			</ng-container>
+
+			<div class="profiles__actions">
+				<button mat-raised-button color="primary" (click)="openDialog()">
+					Invite Team Members
+				</button>
+			</div>
+			<!-- /.profiles__actions -->
+		</div>
+		<!-- /.profiles -->
+	</div>
+	<!-- /.shell -->
+</section>
+<!-- /.section -->

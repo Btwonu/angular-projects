@@ -1,13 +1,26 @@
 .instance {
+	mat-card-title {
+		a {
+			transition: color var(--t-dur) var(--t-timing);
+
+			&:hover {
+				color: var(--c-primary);
+			}
+		}
+	}
+
 	.instance__like-btn {
+		position: relative;
+		z-index: 1;
+
 		&:hover {
 			mat-icon {
-				color: #c2185b !important;
+				color: var(--c-primary) !important;
 			}
 		}
 
 		mat-icon {
-			transition: color .2s ease;
+			transition: color var(--t-dur) var(--t-timing);
 		}
 	}
 

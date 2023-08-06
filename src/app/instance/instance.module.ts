@@ -17,6 +17,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { InstanceItemComponent } from './ui/instance-item/instance-item.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { UserDialogComponent } from './ui/user-dialog/user-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
 	declarations: [
@@ -27,6 +32,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 		RepoTabComponent,
 		CommentTabComponent,
 		InstanceItemComponent,
+		UserDialogComponent,
 	],
 	imports: [
 		CommonModule,
@@ -39,6 +45,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 		MatCardModule,
 		MatDividerModule,
 		MatProgressBarModule,
+		MatTableModule,
+		MatPaginatorModule,
+		MatDialogModule,
+		MatCheckboxModule,
 	],
 })
 export class InstanceModule {}

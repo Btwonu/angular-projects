@@ -1,7 +1,7 @@
 <mat-card class="instance h-full">
 	<mat-card-header class="justify-between gap-4">
 		<mat-card-title class="pb-2 js-equalize">
-			{{ instance.title }}
+			<a routerLink="/instances/{{ instance.id }}">{{ instance.title }}</a>
 		</mat-card-title>
 
 		<div class="instance__like-btn flex-[0_0_24px] pt-2">
@@ -26,7 +26,7 @@
 
 		<mat-divider></mat-divider>
 
-		<div class="slider-users my-4">
+		<div class="slider-users my-4" *ngIf="instance.team.length">
 			<p>
 				<strong>Team Members</strong>
 			</p>
@@ -49,6 +49,9 @@
 	</mat-card-content>
 
 	<mat-card-footer class="pt-4">
-		<mat-progress-bar [ngClass]="{'is-visible': loading}" mode="indeterminate"></mat-progress-bar>
+		<mat-progress-bar
+			[ngClass]="{ 'is-visible': loading }"
+			mode="indeterminate"
+		></mat-progress-bar>
 	</mat-card-footer>
 </mat-card>
